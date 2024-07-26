@@ -4,13 +4,15 @@
   padding: 20px;
   font-family: 'Arial', sans-serif;
   position: relative;
+  background: #f1f4f8; /* Light background for contrast */
+  margin-top: 100px; /* Increased margin to ensure enough space below the navbar */
 }
 
 .add-record {
-  background: #f9f9f9;
+  background: #fff;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Slightly increased shadow for emphasis */
   margin-bottom: 20px;
 }
 
@@ -46,6 +48,10 @@
 
 .stock-list {
   margin-top: 20px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Added shadow for card effect */
 }
 
 .stock-list h2 {
@@ -66,7 +72,8 @@
 }
 
 .stock-list th {
-  background-color: #f4f4f4;
+  background-color: #007bff; /* Blue header for better visual hierarchy */
+  color: white;
 }
 
 .stock-list tr:nth-child(even) {
@@ -95,11 +102,12 @@
   margin-top: 20px;
   font-size: 18px;
   font-weight: bold;
+  color: #333;
 }
 
 .add-btn {
   position: fixed;
-  bottom: 20px;
+  top: 80px; /* Moved slightly down from the top */
   right: 20px;
   width: 50px;
   height: 50px;

@@ -101,12 +101,14 @@ function StockManagement() {
             value={newRecord.sellingPrice}
             onChange={handleChange}
           />
-          <input
-            type="file"
-            name="image"
-            accept="image/jpeg, image/jpg, image/png"
-            onChange={handleChange}
-          />
+          {newRecord.type === 'incoming' && (
+            <input
+              type="file"
+              name="image"
+              accept="image/jpeg, image/jpg, image/png"
+              onChange={handleChange}
+            />
+          )}
           <select
             name="type"
             value={newRecord.type}
@@ -119,38 +121,40 @@ function StockManagement() {
         </div>
       )}
 
-      <div className="stock-list">
-        <h2>Available Products</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Quantity</th>
-              <th>Actual Price</th>
-              <th>Selling Price</th>
-              <th>Deduct</th>
-            </tr>
-          </thead>
-          <tbody>
-            {availableProducts.map((item, index) => (
-              <tr key={index}>
-                <td>{item.name}</td>
-                <td>{item.quantity}</td>
-                <td>TZS {item.actualPrice.toFixed(2)}</td>
-                <td>TZS {item.sellingPrice.toFixed(2)}</td>
-                <td>
-                  <button className="deduct-btn" onClick={() => handleDeduct(item.name)}>Deduct</button>
-                </td>
+      {!showForm && (
+        <div className="stock-list">
+          <h2>Available Products</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Quantity</th>
+                <th>Actual Price</th>
+                <th>Selling Price</th>
+                <th>Deduct</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
-        <div className="total-earnings">
-          <h2>Total Earnings: TZS {totalEarnings.toFixed(2)}</h2>
+            </thead>
+            <tbody>
+              {availableProducts.map((item, index) => (
+                <tr key={index}>
+                  <td>{item.name}</td>
+                  <td>{item.quantity}</td>
+                  <td>TZS {item.actualPrice.toFixed(2)}</td>
+                  <td>TZS {item.sellingPrice.toFixed(2)}</td>
+                  <td>
+                    <button className="deduct-btn" onClick={() => handleDeduct(item.name)}>Deduct</button>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          <div className="total-earnings">
+            <h2>Total Earnings: TZS {totalEarnings.toFixed(2)}</h2>
+          </div>
         </div>
-      </div>
+      )}
 
-      <button className="add-btn" onClick={() => setShowForm(!showForm)}>+</button>
+      <button className="add-btn" onClick={() => setShowForm(!showForm)}>{showForm ? '-' : '+'}</button>
     </div>
   );
 }
