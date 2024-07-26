@@ -1,70 +1,118 @@
-# Getting Started with Create React App
+# Auto Spares Shop
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a web application for an auto spares shop that includes features such as stock management, product listings, service descriptions, and contact information.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Folder Structure](#folder-structure)
+- [License](#license)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Home Page:** Welcome message, shop information, and a call-to-action button.
+- **Products Page:** List of products with images, names, prices, and available quantities.
+- **Stock Management:** Form to add and deduct stock, including image upload for products.
+- **Services Page:** Description of available services with images.
+- **Contact Page:** Contact information, a form to send messages, and a Google Maps location.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+1. Clone the repository:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    ```bash
+    git clone https://github.com/yourusername/auto-spares-shop.git
+    ```
 
-### `npm run build`
+2. Navigate to the project directory:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    ```bash
+    cd auto-spares-shop
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Install the dependencies:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ```bash
+    npm install
+    ```
 
-### `npm run eject`
+## Usage
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Start the development server:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    ```bash
+    npm start
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Open your browser and navigate to `http://localhost:3000`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Folder Structure
 
-## Learn More
+```
+auto-spares-shop/
+│
+├── public/
+│   ├── index.html
+│   └── ...
+│
+├── src/
+│   ├── assets/
+│   │   ├── wheel-aligniment.jpeg
+│   │   ├── body-repair.jpg
+│   │   ├── electric-repair.jpg
+│   │   ├── tire-repair.jpg
+│   │   ├── engine-repair.jpg
+│   │   └── wheel-balance.jpg
+│   │
+│   ├── components/
+│   │   ├── Home.js
+│   │   ├── Home.css
+│   │   ├── Products.js
+│   │   ├── Products.css
+│   │   ├── StockManagement.js
+│   │   ├── StockManagement.css
+│   │   ├── Services.js
+│   │   ├── Services.css
+│   │   ├── Contact.js
+│   │   └── Contact.css
+│   │
+│   ├── StockContext.js
+│   ├── App.js
+│   ├── App.css
+│   ├── index.js
+│   └── index.css
+│
+└── package.json
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## License
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project is licensed under the MIT License.
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Additional Information
 
-### Analyzing the Bundle Size
+### Home Page
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The home page welcomes visitors with a hero section containing a background image, a heading, a brief description, and a call-to-action button.
 
-### Making a Progressive Web App
+### Products Page
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The products page displays a list of available products with their images, names, prices, and quantities. The stock quantity is updated dynamically based on stock management operations.
 
-### Advanced Configuration
+### Stock Management
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Stock management allows users to add new stock or deduct stock quantities. The form includes fields for the product name, quantity, actual price, selling price, and image upload (JPEG, JPG, or PNG).
 
-### Deployment
+### Services Page
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+The services page describes the various services offered by the shop, including wheel alignment, wheel balance, car tire repair, engine repair, body repair, and electrical repair. Each service is represented with an image.
 
-### `npm run build` fails to minify
+### Contact Page
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The contact page provides the shop's address, phone numbers, and email address. It also includes a form for visitors to send messages and a Google Maps iframe to display the shop's location.
+
+---
