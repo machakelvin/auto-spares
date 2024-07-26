@@ -23,7 +23,7 @@ function Products() {
             <img src={item.imageUrl} alt={item.name} className="product-image" />
             <div className="product-info">
               <h2>{item.name}</h2>
-              <p>Price: ${item.sellingPrice.toFixed(2)}</p>
+              <p>Price: TZS {item.sellingPrice.toFixed(2)}</p>
               <p>Quantity: {item.quantity}</p>
               <button className="sell-btn" onClick={() => handleSell(item.name)}>Sell</button>
             </div>

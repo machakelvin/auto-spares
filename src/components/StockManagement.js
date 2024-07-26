@@ -146,7 +146,7 @@ function StockManagement() {
           </tbody>
         </table>
         <div className="total-earnings">
-          <h2>Total Earnings: ${totalEarnings.toFixed(2)}</h2>
+          <h2>Total Earnings: TZS {totalEarnings.toFixed(2)}</h2>
         </div>
       </div>
 
