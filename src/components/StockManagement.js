@@ -136,8 +136,8 @@ function StockManagement() {
               <tr key={index}>
                 <td>{item.name}</td>
                 <td>{item.quantity}</td>
-                <td>${item.actualPrice.toFixed(2)}</td>
-                <td>${item.sellingPrice.toFixed(2)}</td>
+                <td>TZS {item.actualPrice.toFixed(2)}</td>
+                <td>TZS {item.sellingPrice.toFixed(2)}</td>
                 <td>
                   <button className="deduct-btn" onClick={() => handleDeduct(item.name)}>Deduct</button>
                 </td>
