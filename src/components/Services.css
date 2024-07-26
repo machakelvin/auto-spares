@@ -1,0 +1,40 @@
+.services {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .service-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    max-width: 300px;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .service-card img {
+    border-radius: 8px;
+    height: 150px;
+    object-fit: cover;
+    width: 100%;
+  }
+  
+  .service-card h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+  
+  .service-card p {
+    color: #555;
+    font-size: 1em;
+    line-height: 1.4;
+  }
+  

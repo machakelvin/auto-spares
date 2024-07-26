@@ -1,0 +1,120 @@
+/* StockManagement.css */
+
+.stock-management {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  position: relative;
+}
+
+.add-record {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.add-record h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.add-record input,
+.add-record select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.add-record button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-record button:hover {
+  background-color: #0056b3;
+}
+
+.stock-list {
+  margin-top: 20px;
+}
+
+.stock-list h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.stock-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.stock-list th,
+.stock-list td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.stock-list th {
+  background-color: #f4f4f4;
+}
+
+.stock-list tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.stock-list tr:hover {
+  background-color: #f1f1f1;
+}
+
+.deduct-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.deduct-btn:hover {
+  background-color: #c82333;
+}
+
+.total-earnings {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.add-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #0056b3;
+}
