@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
-import './StockManagement.css';
-import StockContext from '../../StockContext';
+import '../assets/css/StockManagement.css';
+import StockContext from '../StockContext';
 
 function StockManagement() {
   const { stock, addStock, deductStock } = useContext(StockContext);

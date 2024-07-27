@@ -1,5 +1,5 @@
 import React from 'react';
-import './Contact.css';
+import '../assets/css/Contact.css';
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 
 function Contact() {

@@ -1,6 +1,6 @@
 import React from 'react';
-import './Home.css';
-import backgroundImage from '../../assets/img/automotive-spare-parts.jpg';  // Update the path
+import '../assets/css/Home.css';
+import backgroundImage from '../assets/img/automotive-spare-parts.jpg';  // Update the path
 import { useNavigate } from 'react-router-dom';
 
 function Home() {
