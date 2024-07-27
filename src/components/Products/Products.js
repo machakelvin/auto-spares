@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react';
-import StockContext from '../StockContext';
+import StockContext from '../../StockContext';
 import './Products.css';
 
 function Products() {
