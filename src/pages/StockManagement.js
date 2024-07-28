@@ -87,13 +87,13 @@ function StockManagement() {
             value={newRecord.quantity}
             onChange={handleChange}
           />
-          <input
+           {newRecord.type === 'incoming' && (<input
             type="number"
             name="actualPrice"
             placeholder="Actual Price"
             value={newRecord.actualPrice}
             onChange={handleChange}
-          />
+          />)}
           <input
             type="number"
             name="sellingPrice"
@@ -129,8 +129,8 @@ function StockManagement() {
               <tr>
                 <th>Name</th>
                 <th>Quantity</th>
-                <th>Actual Price</th>
-                <th>Selling Price</th>
+                <th>Actual Price (TZS)</th>
+                <th>Selling Price (TZS)</th> 
                 <th>Deduct</th>
               </tr>
             </thead>
