@@ -59,27 +59,33 @@ auto-spares-shop/
 │
 ├── src/
 │   ├── assets/ 
-│   │   ├──img/
-                ├── wheel-aligniment.jpeg
-│   │           ├── body-repair.jpg
-│   │           ├── electric-repair.jpg
-│   │           ├── tire-repair.jpg
-│   │           ├── engine-repair.jpg
-│   │           └── wheel-balance.jpg
-|   |    ├──css/
-|   |            ├──
+│   │   ├── img/
+│   │   │   ├── wheel-aligniment.jpeg
+│   │   │   ├── body-repair.jpg
+│   │   │   ├── electric-repair.jpg
+│   │   │   ├── tire-repair.jpg
+│   │   │   ├── engine-repair.jpg
+│   │   │   ├── wheel-balance.jpg
+│   │   │   └── automotive-spare-parts.jpg
+│   │   ├── css/
+│   │       ├── Home.css
+│   │       ├── Products.css
+│   │       ├── StockManagement.css
+│   │       ├── Services.css
+│   │       ├── Contact.css
+│   │       ├── Navbar.css
+│   │       └── About.css
 │   │
 │   ├── components/
+│   │   └── Nav.js
+│   │
+│   ├── pages/
 │   │   ├── Home.js
-│   │   ├── Home.css
 │   │   ├── Products.js
-│   │   ├── Products.css
 │   │   ├── StockManagement.js
-│   │   ├── StockManagement.css
 │   │   ├── Services.js
-│   │   ├── Services.css
 │   │   ├── Contact.js
-│   │   └── Contact.css
+│   │   └── About.js
 │   │
 │   ├── StockContext.js
 │   ├── App.js
@@ -88,6 +94,7 @@ auto-spares-shop/
 │   └── index.css
 │
 └── package.json
+
 ```
 
 ## License
