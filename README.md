@@ -58,13 +58,14 @@ auto-spares-shop/
 │   └── ...
 │
 ├── src/
-│   ├── assets/
-│   │   ├── wheel-aligniment.jpeg
-│   │   ├── body-repair.jpg
-│   │   ├── electric-repair.jpg
-│   │   ├── tire-repair.jpg
-│   │   ├── engine-repair.jpg
-│   │   └── wheel-balance.jpg
+│   ├── assets/ 
+│   │   ├──img/
+                ├── wheel-aligniment.jpeg
+│   │           ├── body-repair.jpg
+│   │           ├── electric-repair.jpg
+│   │           ├── tire-repair.jpg
+│   │           ├── engine-repair.jpg
+│   │           └── wheel-balance.jpg
 │   │
 │   ├── components/
 │   │   ├── Home.js
