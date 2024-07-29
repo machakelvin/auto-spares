@@ -69,10 +69,11 @@
   padding: 10px;
   border: 1px solid #ddd;
   text-align: center;
+  border-radius: 6px;
 }
 
 .stock-list th {
-  background-color: #007bff; /* Blue header for better visual hierarchy */
+  background-color: #83531bb7; /* Blue header for better visual hierarchy */
   color: white;
 }
 
