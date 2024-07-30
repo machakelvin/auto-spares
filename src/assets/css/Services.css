@@ -1,40 +1,85 @@
 .services {
-    text-align: center;
-    padding: 20px;
+  text-align: center;
+  padding: 20px;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.service-card {
+  position: relative; /* Ensure the pseudo-element is positioned relative to the card */
+  background-color: #fff; /* Set a solid background for the card */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  max-width: 300px;
+  padding: 20px;
+  text-align: left;
+  width: calc(100% - 40px); /* Full width minus margins */
+  overflow: hidden; /* Hide overflow to ensure the pseudo-element stays within the card */
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: linear-gradient(45deg, #ff0000, #ff9900, #00ff00, #0000ff, #ff00ff);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+  z-index: -1; /* Ensure the pseudo-element is behind the card content */
+  border-radius: 12px; /* Ensure the border-radius matches the card */
+}
+
+.service-card img {
+  border-radius: 8px;
+  height: 150px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.service-card h2 {
+  font-size: 1.5em;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.service-card p {
+  color: #555;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+.service-card p:hover {
+  color: #e91111;
+  transform: translateY(15px);
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
   }
-  
-  .service-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  50% {
+    background-position: 100% 50%;
   }
-  
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Media query for large screens */
+@media (min-width: 1024px) {
   .service-card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    max-width: 300px;
-    padding: 20px;
-    text-align: left;
+    width: calc(33.333% - 40px); /* Three cards per row, accounting for margins */
   }
-  
-  .service-card img {
-    border-radius: 8px;
-    height: 150px;
-    object-fit: cover;
-    width: 100%;
-  }
-  
-  .service-card h2 {
-    font-size: 1.5em;
-    margin: 10px 0;
-  }
-  
-  .service-card p {
-    color: #555;
-    font-size: 1em;
-    line-height: 1.4;
-  }
-  
+}
+h1{
+  border-bottom: #0000ff solid 2px;
+  display: inline;
+}
