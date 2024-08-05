@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Navigation } from "./components/navigation";
 import { Header } from "./components/header";
 import { Features } from "./components/features";
@@ -12,7 +13,7 @@ import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
 import Auth from "./components/Auth";
-import Login from "./components/Login";
+import Login from "./components/login";
 
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
@@ -27,18 +28,26 @@ const App = () => {
   }, []);
 
   return (
+    
+    <Router>
     <div>
       <Navigation />
-      <Header data={landingPageData.Header} />
-      <Features data={landingPageData.Features} />
-      <About data={landingPageData.About} />
-      <Services data={landingPageData.Services} />
-      <Gallery data={landingPageData.Gallery} />
-      <Testimonials data={landingPageData.Testimonials} />
-      <Team data={landingPageData.Team} />
-      <Contact data={landingPageData.Contact} />
-      <Auth data={landingPageData.Login} />
+      <Routes>
+        <Route path="/" element={<>
+          <Header data={landingPageData.Header} />
+          <Features data={landingPageData.Features} />
+          <About data={landingPageData.About} />
+          <Services data={landingPageData.Services} />
+          <Gallery data={landingPageData.Gallery} />
+          <Testimonials data={landingPageData.Testimonials} />
+          <Team data={landingPageData.Team} />
+          <Contact data={landingPageData.Contact} />
+        </>} />
+        <Route path="/auth" element={<Auth />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
     </div>
+  </Router>
   );
 };
 

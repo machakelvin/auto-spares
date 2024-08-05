@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Auth from "./Auth";
 
 export const Navigation = (props) => {
   return (
@@ -17,9 +19,9 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
             <span className="icon-bar"></span>{" "}
           </button>
-          <a className="navbar-brand page-scroll" href="#page-top">
+          <Link className="navbar-brand page-scroll" to="/">
             BEM Accounting
-          </a>{" "}
+          </Link>
         </div>
 
         <div
@@ -63,9 +65,9 @@ export const Navigation = (props) => {
               </a>
             </li>
             <li>
-              <a href="#login" className="page-scroll">
+              <Link to="/auth">
                 Login
-              </a>
+              </Link>
             </li>
             {/* <li>
               <a href="#signup" className="page-scroll">

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Login from './Login';
-import SignUp from './Signup';
+import Login from './login';
+import SignUp from './signup';
 
 function Auth() {
   const [isLogin, setIsLogin] = useState(true);
@@ -10,7 +10,7 @@ function Auth() {
   };
 
   return (
-    <div className="auth-container">
+    <div id="login" className="auth-container">
       {isLogin ? (
         <div>
           <Login toggleAuth={toggleAuth} />
