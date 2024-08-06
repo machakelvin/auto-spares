@@ -67,66 +67,66 @@
   ],
   "Services": [
     {
-      "icon": "fa fa-wordpress",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "img": "img/services/01.jpg",
+      "name": "Body Repair Service",
+      "text": "We offer comprehensive body car repair, including dent removal, paint restoration, collision repair, and panel replacement. Our skilled technicians ensure your vehicle looks like new with a professional finish."
     },
     {
-      "icon": "fa fa-cart-arrow-down",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "img": "img/services/02.jpg",
+      "name": "Electric Services",
+      "text": "Our electric repair service covers diagnostic testing, wiring repairs, battery replacements, and alternator servicing. We handle all electrical issues to keep your vehicle running smoothly."
     },
     {
-      "icon": "fa fa-cloud-download",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "img": "img/services/03.jpg",
+      "name": "Engine Repair Services",
+      "text": "Our engine repair service includes diagnostics, overhauls, fuel system repairs, and cooling system servicing. We ensure your engine runs at peak performance with expert care and maintenance."
     },
     {
-      "icon": "fa fa-language",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "img": "img/services/04.jpg",
+      "name": "Tire Repair Services",
+      "text": "We provide quick and efficient tire repairs, including puncture fixes, valve replacements, and tire rotations. Our service keeps your tires safe and in top condition for a reliable drive."
     },
     {
-      "icon": "fa fa-plane",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "img": "img/services/05.jpeg",
+      "name": "Wheel-Alignment Service",
+      "text": "Our precision wheel alignment service improves handling, reduces tire wear, and enhances fuel efficiency. Using advanced equipment, we ensure your wheels are perfectly aligned for a smooth ride."
     },
     {
-      "icon": "fa fa-pie-chart",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "img": "img/services/06.jpg",
+      "name": "Wheel-Balance Service",
+      "text": "Our wheel balance service eliminates vibrations and extends tire life. We dynamically balance your wheels for optimal performance and a comfortable driving experience."
     }
   ],
   "Testimonials": [
     {
       "img": "img/testimonials/01.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "John Doe"
+      "text": "\"I recently purchased a set of car tires from your online store. The tires arrived quickly and were exactly as described. The installation process was smooth, thanks to your detailed instructions. I will definitely be a returning customer!\"",
+      "name": "John Soka"
     },
     {
       "img": "img/testimonials/02.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "Johnathan Doe"
+      "text": "\"The transaction was seamless, and I was impressed with how fast my order was delivered. The product was well-packaged and met my expectations. Great experience overall! Keep up the good work.\"",
+      "name": "Johnathan Massawe"
     },
     {
       "img": "img/testimonials/03.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "John Doe"
+      "text": "\"I had a few questions about the product before making my purchase, and the customer support team was incredibly helpful and responsive. They guided me through the process and ensured I got the right product for my needs. Thank you for the excellent service!\"",
+      "name": "Petro  Berdard"
     },
     {
       "img": "img/testimonials/04.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "Johnathan Doe"
+      "text": "\"I've made several purchases from your online store, and every time, the products have been top-notch. The reliability of your service keeps me coming back. I appreciate the consistency and quality.\"",
+      "name": "Anneth Macha"
     },
     {
       "img": "img/testimonials/05.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "John Doe"
+      "text": "\"The website is user-friendly and makes shopping a breeze. The checkout process was quick and straightforward, and I appreciated the various payment options available. I'll definitely recommend your store to friends and family.\"",
+      "name": "Fred Lwila"
     },
     {
-      "img": "img/testimonials/06.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "Johnathan Doe"
+      "img": "img/testimonials/05..jpg",
+      "text": "\"I found the prices on your website to be very competitive, and the quality of the products exceeded my expectations. The value for money is excellent, and I will certainly continue shopping here. Keep up the great work!\"",
+      "name": "Kizito Saruni"
     }
   ],
   "Team": [
@@ -143,7 +143,7 @@
     {
       "img": "img/team/03.jpg",
       "name": "Kelvin Bahati",
-      "job": "System Developer"
+      "job": "System Analyst"
     }
   ],
   "Contact": {
